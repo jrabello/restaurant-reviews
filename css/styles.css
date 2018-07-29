@@ -133,14 +133,19 @@ nav h1 a {
   letter-spacing: 0;
   margin: 0 10px 10px 0;
   padding: 0 10px;
-  width: 200px;
+  width: 100%;
 }
-
+@media only screen and (min-width: 576px) {
+  .filter-options select {
+    width: 200px;
+  }
+}
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
