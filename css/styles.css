@@ -153,11 +153,15 @@ nav h1 a {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  margin: 15px;
-  min-height: 380px;
+  margin: 10px;
   padding: 0 30px 25px;
   text-align: left;
-  width: 270px;
+}
+@media only screen and (min-width: 640px) {
+  #restaurants-list li {
+    min-height: 380px;
+    width: 270px; 
+  }
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
