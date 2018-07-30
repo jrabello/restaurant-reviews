@@ -8,13 +8,18 @@ class DBHelper {
    * Change this to restaurants.json file location on your server.
    */
   static get DATABASE_URL() {
-    return `${
-      window.location.protocol
-    }//${
-      window.location.hostname
-    }${
-      window.location.port ? `:`+window.location.port : ``
-    }/data/restaurants.json`;
+    const url = `${
+        window.location.protocol
+      }//${
+        window.location.hostname
+      }${
+        window.location.port ? `:`+window.location.port : ``
+      }${
+        window.location.pathname.length > 1 ? window.location.pathname : ``
+      }/data/restaurants.json`;
+      console.log(`url:`, url);
+      
+    return url;
   }
 
   /**

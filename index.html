@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="css/styles.css">
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js').then((reg) => {
-          console.log('Yay, service worker is live!', reg);
+      navigator.serviceWorker.register(window.location.pathname+'sw.js').then((reg) => {
+          console.log('SW success: ', reg);
       }).catch((err) => {
-          console.log('No oats for you.', err);
+          console.log('Error:', err);
       });
     }
   </script>
