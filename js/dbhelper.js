@@ -15,10 +15,8 @@ class DBHelper {
       }${
         window.location.port ? `:`+window.location.port : ``
       }${
-        window.location.pathname.length > 1 ? window.location.pathname : ``
-      }/data/restaurants.json`;
-      console.log(`url:`, url);
-      
+        window.location.pathname
+      }data/restaurants.json`;
     return url;
   }
 
