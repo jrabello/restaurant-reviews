@@ -7,7 +7,7 @@ This project was created for udacity's nanodegree, the purpose is to develop a R
 - Work offline using service workers
 
 <p align="center">
-  <img alt="restaurant app" src=""/>
+  <img alt="restaurant app" src="https://raw.githubusercontent.com/jrabello/restaurant-reviews/master/img/restaurant.png"/>
 </p>
 
 ## Installation
