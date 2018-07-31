@@ -1,4 +1,4 @@
-const version = "v1::";
+const version = "v2::";
 const cacheName = `${version}static-resources`;
 
 const offlineStuff = [

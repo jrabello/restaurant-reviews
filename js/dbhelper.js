@@ -15,7 +15,7 @@ class DBHelper {
       }${
         window.location.port ? `:`+window.location.port : ``
       }${
-        window.location.pathname
+        window.location.hostname.includes(`github.`) ? window.location.pathname : `/`
       }data/restaurants.json`;
     return url;
   }
