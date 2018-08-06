@@ -21,7 +21,7 @@
 <body>
   <header>
     <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
+      <h1><a href="/" >Restaurant Reviews</a></h1>
     </nav>
   </header>
 
@@ -29,7 +29,7 @@
     <section id="map-container">
       <div id="map"></div>
     </section>
-    <section>
+    <section role="main" tabindex="-1">
       <div class="filter-options">
         <h2>Filter Results</h2>
         <div class="filter-body">
@@ -45,6 +45,7 @@
     </section>
   </main>
 
+  <script type="application/javascript" charset="utf-8" src="js/listener.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqLlF_g1YEjcpegRkhb_LyaBHY6Oy7gAI&libraries=places&callback=initMap"></script>
